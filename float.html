@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        /* 設定box-sizing就不用計算padding跟margin的寬度 */
+        * {
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+        }
+
+        .wrap {
+            width: 1000px;
+            margin: 0 auto;
+
+        }
+
+        .header {
+            height: 50px;
+            background-color: #f00;
+            margin-bottom: 10px;
+        }
+
+        .main {
+            margin-bottom: 10px;
+        }
+
+        .topmenu {
+            background-color: blue;
+            margin-bottom: 10px;
+            height: 50px;
+
+        }
+
+        .topmenu li {
+            float: left;
+            line-height: 50px;
+        }
+
+        /* 使用line-height或用padding-top/bottom皆可 */
+
+        .topmenu a {
+            display: block;
+            font-size: 20px;
+            color: white;
+            text-decoration: none;
+            width: 200px;
+            text-align: center;
+
+        }
+
+        .topmenu a:hover {
+            background-color: orange;
+        }
+
+
+        /* 設定float */
+        .menu {
+            width: 200px;
+            background-color: skyblue;
+            float: left;
+        }
+
+        .content {
+            width: 800px;
+            background-color: pink;
+            height: 50px;
+            float: left;
+
+        }
+
+        /* 因為設定float，所以要清除用clear */
+        .clearfix {
+            clear: both;
+        }
+
+        .footer {
+            height: 50px;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">
+
+        </div>
+        <div class="topmenu">
+            <ul>
+                <li> <a href="#">首頁</a></li>
+                <li> <a href="#">政治</a></li>
+                <li> <a href="#">影劇</a></li>
+                <li> <a href="#">體育</a></li>
+                <li> <a href="#">生活</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="menu">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat expedita dignissimos ab modi quas
+                    voluptates natus eveniet eos consequuntur quod, sequi omnis quibusdam tempora pariatur,
+                    exercitationem
+
+                </p>
+            </div>
+            <div class="content">
+
+            </div>
+            <!-- 在不想要浮動的上方設定clearfix，這樣下方物件即可正常排列 -->
+            <div class="clearfix"></div>
+        </div>
+        <div class="footer">
+
+        </div>
+    </div>
+</body>
+
+</html>
