@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        /* 設定box-sizing就不用計算padding跟margin的寬度 */
+        * {
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+        }
+
+        .wrap {
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        .header {
+            height: 50px;
+            background-color: #f00;
+            margin-bottom: 10px;
+        }
+
+        .header img {
+            width: 50px;
+            margin-left: 10px;
+        }
+
+        .header ul {
+            float: right;
+        }
+
+        .header li {
+            float: left;
+            padding: 15px;
+        }
+
+        .header a {
+            color: white;
+            text-decoration: none;
+        }
+
+
+        .main {
+            margin-bottom: 10px;
+        }
+
+        .topmenu {
+            background-color: blue;
+            margin-bottom: 10px;
+            height: 50px;
+        }
+
+        .topmenu li {
+            float: left;
+            line-height: 50px;
+        }
+
+        /* 使用line-height或用padding-top/bottom皆可 */
+
+        .topmenu a {
+            display: block;
+            font-size: 20px;
+            color: white;
+            text-decoration: none;
+            width: 200px;
+            text-align: center;
+        }
+
+        .topmenu a:hover {
+            background-color: orange;
+        }
+
+
+        /* 設定float */
+        .menu {
+            width: 200px;
+            background-color: skyblue;
+            float: left;
+            margin-right: 5px;
+        }
+
+        .menu p {
+            padding: 10px;
+        }
+
+        .content {
+            width: 590px;
+            background-color: pink;
+            float: left;
+            margin-right: 5px;
+        }
+
+        .content p {
+            padding: 10px;
+        }
+
+        .rightmenu {
+            width: 200px;
+            background-color: blanchedalmond;
+            float: left;
+        }
+
+        .rightmenu p {
+            padding: 10px;
+        }
+
+        /* 因為設定float，所以要清除用clear */
+        .clearfix {
+            clear: both;
+        }
+
+        .footer {
+            background-color: green;
+        }
+
+        .footer p {
+            color: white;
+            text-align: center;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">
+            <a href="#"><img src="img/fake-logo.png" alt=""></a>
+
+            <ul>
+                <li><a href="#">關於我們</a></li>
+                <li><a href="#">產品介紹</a></li>
+                <li><a href="#">登入</a></li>
+            </ul>
+        </div>
+        <div class="topmenu">
+            <ul>
+                <li> <a href="#">首頁</a></li>
+                <li> <a href="#">政治</a></li>
+                <li> <a href="#">影劇</a></li>
+                <li> <a href="#">體育</a></li>
+                <li> <a href="#">生活</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="menu">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat expedita dignissimos ab modi quas
+                    voluptates natus eveniet eos consequuntur quod, sequi omnis quibusdam tempora pariatur,
+                    exercitationem
+
+                </p>
+            </div>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis eos facere incidunt libero quibusdam,
+                    ratione earum aliquam autem nostrum magnam vitae numquam non id delectus neque, sapiente illo, quos
+                    illum exercitationem mollitia voluptatibus! Sequi corrupti quod reiciendis! Atque delectus corrupti
+                    optio, quaerat aperiam nulla ipsum ab in, numquam dolorum pariatur architecto placeat tempore natus
+                    dolores veritatis quos. Dolorem amet porro quam, veritatis suscipit fugiat ea. Quod, pariatur ipsum.
+                    Repudiandae aspernatur, quis quos tempore laboriosam quas saepe officia culpa veritatis fuga
+                    accusantium aliquam eveniet mollitia quam explicabo, eligendi sunt debitis officiis inventore
+                    corporis, optio doloremque! Beatae reiciendis maxime minus praesentium consequuntur, sit qui
+                    inventore consectetur suscipit ullam debitis error quae, quam non deleniti nisi aut exercitationem
+                    magnam odio officiis iusto? At eos veniam, ea nobis obcaecati consectetur architecto magnam ipsam
+                    dolor rerum doloribus, minima consequatur, aut consequuntur corporis. Debitis qui a sequi
+                    repellendus sit recusandae, cum incidunt saepe accusamus ut non omnis ratione fuga illum. Dolor,
+                    veniam blanditiis impedit quibusdam quaerat, ipsam qui ducimus animi fugiat quae iusto esse aut
+                    voluptas deleniti libero sint reiciendis ex illum dicta sed cumque modi. Sequi vitae sunt, itaque
+                    minima nulla cupiditate atque deserunt culpa officiis earum, consequuntur at modi, error voluptatem
+                    dolore! Excepturi ab explicabo ullam, distinctio sequi ex magnam? A laborum eos nostrum voluptas
+                    expedita accusantium eum, similique quos, provident corrupti architecto at vel molestias ab sed quas
+                    necessitatibus enim itaque eveniet molestiae consequatur velit earum quibusdam? Perspiciatis
+                    obcaecati culpa cupiditate corrupti sequi quod eveniet quisquam voluptate! Placeat neque dignissimos
+                    velit corporis fuga rerum nesciunt ab, sint expedita dolorem sunt sapiente deleniti id accusamus
+                    laborum tenetur voluptate cupiditate, delectus itaque libero quibusdam nobis ipsum voluptas sit!
+                    Dolore reprehenderit consequuntur a officiis magni eos provident unde ullam temporibus possimus!
+                    Libero recusandae rem veritatis sapiente dicta voluptatem reiciendis harum eius nesciunt veniam
+                    vitae, sit nam.</p>
+            </div>
+            <div class="rightmenu">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, numquam. Ex eos neque deleniti
+                    sunt repudiandae similique aut quod, eum numquam, dolore enim obcaecati ratione modi eligendi
+                    incidunt. Ut, nulla!</p>
+            </div>
+            <!-- 在不想要浮動的上方設定clearfix，這樣下方物件即可正常排列 -->
+            <div class="clearfix"></div>
+        </div>
+        <div class="footer">
+            <p>台中市太平區中山路000號</p>
+        </div>
+    </div>
+</body>
+
+</html>
